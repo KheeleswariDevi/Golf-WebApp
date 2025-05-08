@@ -1,0 +1,38 @@
+[
+{
+  "model": "golf.golfer",
+  "pk": 1,
+  "fields": {
+    "forename": "Daisy",
+    "surname": "Murphy",
+    "handicap": 11
+  }
+},
+{
+  "model": "golf.golfer",
+  "pk": 2,
+  "fields": {
+    "forename": "Abigail",
+    "surname": "Murphy",
+    "handicap": 5
+  }
+},
+{
+  "model": "golf.golfer",
+  "pk": 3,
+  "fields": {
+    "forename": "Rebecca",
+    "surname": "Smyth",
+    "handicap": 12
+  }
+},
+{
+  "model": "golf.golfer",
+  "pk": 4,
+  "fields": {
+    "forename": "Punky",
+    "surname": "Brewster",
+    "handicap": 3
+  }
+}
+]

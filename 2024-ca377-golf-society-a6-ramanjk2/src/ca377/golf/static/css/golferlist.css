@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  color: #007bff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.green-border {
+  border: 50px solid #314631;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 10px solid #333;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+h3 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}addgolfer/
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0c2a49;
+}
+
+.messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.messages li {
+  margin-bottom: 10px;
+}
+
+.add-golfer-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.add-golfer-button:hover {
+  background-color: #0c2a49;
+}
+
+.container {
+  position: fixed;
+  bottom: 45px;
+  right: 40px;
+  display: inline-block;
+  padding: 20px;
+  text-align: left;
+}
+
+.index-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2e2b2b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.index-button:hover {
+  background-color: #919294;
+}

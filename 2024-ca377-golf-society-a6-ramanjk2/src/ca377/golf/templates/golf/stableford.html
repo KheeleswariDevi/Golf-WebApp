@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stableford Calculation</title>
+  <link rel="stylesheet" href="/static/css/stableford.css">
+  
+</head>
+<body>
+  <div class="green-border">
+    <h1>Stableford Calculation</h1>
+
+    <form method="POST" action="{% url 'stableford' %}">
+      {% csrf_token %}
+      <label for="data">Enter the golf scores:</label><br>
+      <textarea name="data" id="data" rows="5" cols="50"></textarea><br>
+      <input type="submit" value="Calculate">
+    </form>
+
+
+    <div class="container2">
+      {% if output %}
+      <div class="results">
+        <table>
+          <thead>
+            <tr>
+              <th>Scores</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in output %}
+            <tr>
+              <td>{{ item }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+
+      {% if disqualified %}
+      <div class="results">
+        <table>
+          <thead>
+            <tr>
+              <th>Disqualified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ disqualified }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </div>
+
+    <a href="{% url 'index' %}" class="index-button">Home</a>
+
+  </div>
+</body>
+</html>

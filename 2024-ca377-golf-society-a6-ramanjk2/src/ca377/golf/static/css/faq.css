@@ -1,0 +1,122 @@
+body {
+    border: 50px solid #314631;
+    padding: 5%;
+    background-color: #f1f1f1;
+    color: #007bff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.box {
+    border: 15px solid #333;
+    height: 80px;
+    width: 400px;
+    background-color: #f1f1f1;
+}
+  
+header .box h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.faq-container {
+    max-width: 600%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+  
+.question {
+    color: #070707;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+  
+.answer p {
+    color: #1f1d1d;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  
+.show {
+    display: block;
+}
+  
+.enquiry-form {
+    background-color: #f1f1f1;
+    padding: 200px;
+    margin-top: 20px;
+    border: 50px solid #2c2323;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.enquiry-form h2 {
+    color: #201515;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.enquiry-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #070707;
+    font-size: 16px;
+}
+  
+.enquiry-form input[type="text"],
+.enquiry-form input[type="email"],
+.enquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 4px solid #ccc;
+    font-size: 16px;
+}
+  
+.enquiry-form button[type="submit"] {
+    background-color: #353232;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.enquiry-form button[type="submit"]:hover {
+    background-color: #b31500;
+}
+
+.container {
+    position: fixed;
+    bottom: 45px;
+    right: 40px;
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+}
+  
+.index-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2e2b2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+  
+.index-button:hover {
+    background-color: #919294;
+}

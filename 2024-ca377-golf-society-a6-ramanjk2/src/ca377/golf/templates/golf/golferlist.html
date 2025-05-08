@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golfer List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/golferlist.css' %}">
+</head>
+<body>
+    <div class="green-border">
+        <h2>Golfers</h2>
+      
+        {% if messages %}
+        <ul class="messages">
+          {% for message in messages %}
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      
+        <ul>
+          {% for g in golfers %}
+          <li>{{ g }} <a href="{% url 'golferdetails' g.id %}">[View details]</a></li>
+          {% empty %}
+          <li>No golfers yet.</li>
+          {% endfor %}
+          <li><a href="{% url 'addgolfer' %}" class="add-golfer-button">Add golfer</a></li>
+        </ul>
+      
+        <img src="/static/images /golfing.jpg" alt="Golfing Image">
+      
+        <div class="container">
+          <a href="{% url 'index' %}" class="index-button">Home</a>
+        </div>
+      </div>
+
+</body>
+</html>

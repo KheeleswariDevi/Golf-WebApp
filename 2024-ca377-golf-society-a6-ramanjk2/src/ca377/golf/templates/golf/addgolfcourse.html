@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Golf Course</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/addcourse.css' %}">
+</head>
+<body>
+    <div class="border">
+        <div class="container">
+            <h2>Add Golf Course</h2>
+
+            <form action="" method="post">
+                <table>
+                    {{ form.as_table }}
+                </table>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

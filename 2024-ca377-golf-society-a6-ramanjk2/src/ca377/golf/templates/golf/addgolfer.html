@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add golfer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/addgolfer.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Add golfer</h2>
+
+        <form action="" method="post">
+            <table>
+                {{ form.as_table }}
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>

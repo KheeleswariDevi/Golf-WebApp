@@ -1,0 +1,82 @@
+body {
+    border: 50px solid #314631;
+    padding: 5%;
+    background-color: #f1f1f1;
+    color: #1d1e1f;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border: 10px solid #333;
+    height: 80px;
+    width: 400px;
+    background-color: #f1f1f1;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 8px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style table header cells */
+th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style table data cells */
+td {
+    border: 1px solid black;
+}
+
+/* Add some spacing between table rows */
+tr {
+    margin-bottom: 10px;
+}
+
+/* Ensure table cells have equal width */
+td {
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+/* Adjust text alignment in table cells */
+td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+}
+
+.container {
+    position: fixed;
+    bottom: 45px;
+    right: 40px;
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+}
+  
+.index-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2e2b2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+  
+.index-button:hover {
+    background-color: #919294;
+}

@@ -1,0 +1,36 @@
+{% load static %}
+
+{% block title %} {% endblock %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+
+{% block content %}
+
+   <div class="box">
+      <h1>CA377 Golf Society Home Page</h1>
+    </div>
+      <nav>
+        <ul>
+            <li><a href="{% url 'golferlist' %}">Golfers</a></li>
+            <li><a href="{% url 'courselist' %}">Golf Courses</a></li>
+            <li><a href="{% url 'stableford' %}">Stableford</a></li>
+            <li><a href="{% url 'weather' %}">Weather</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+        </ul>
+    </nav>
+   <h3>For lovers of golf</h3>
+   <p>
+      Welcome to the CA377 Golf Society web site. Here at CA377 we are
+      passionate about golf and we are always looking for new members.
+      We want you to love golf as much as we do.
+   </p>
+
+   <h3>Current record counts:</h3>
+   <ul>
+       <li>Golfers: {{ num_golfers }}</li>
+       <li>Courses: {{ num_courses }}</li>
+   </ul>
+
+
+   <img src="/static/images /golfball.jpg" alt="Golfing Image">
+
+{% endblock %}

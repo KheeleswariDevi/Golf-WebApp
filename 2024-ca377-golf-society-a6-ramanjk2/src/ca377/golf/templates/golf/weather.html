@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/weather.css">
+</head>
+<body>
+    <h1>Weather Forecast</h1>
+    <table>
+        <tr>
+            <th>Date & Time</th>
+            <th>Temperature (°C)</th>
+            <th>Weather Description</th>
+        </tr>
+    </table>    
+        {% for items in daily_temperatures %}
+        <table>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.date }}</td>
+                <td>{{ item.temperature }}°C</td>
+                <td>{{ item.weather_description }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        {% endfor %}
+        
+        <div class="container">
+            <a href="{% url 'index' %}" class="index-button">Home</a>
+        </div>
+</body>
+</html>

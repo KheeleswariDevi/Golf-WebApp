@@ -1,0 +1,62 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh; /* Updated to use viewport height */
+  width: 100%;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 40px solid #314631; /* Updated border style using viewport width */
+  box-sizing: border-box;
+}
+
+.container > h2 {
+  font-size: 4vw; /* Updated font size using viewport width */
+  margin-bottom: 2vw; /* Updated margin using viewport width */
+  text-align: center;
+}
+
+form {
+  max-width: 60vw; /* Updated max-width using viewport width */
+  width: 100%;
+  padding: 4vw; /* Updated padding using viewport width */
+  background-color: #fff;
+  border-radius: 2vw; /* Updated border-radius using viewport width */
+  box-sizing: border-box;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1); /* Updated box-shadow using viewport width */
+}
+
+table {
+  width: 100%;
+}
+
+table td,
+table th {
+  padding: 1vw; /* Updated padding using viewport width */
+  border-bottom: 0.1vw solid #ddd; /* Updated border style using viewport width */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 1vw; /* Updated padding using viewport width */
+  border: 0.1vw solid #ddd; /* Updated border style using viewport width */
+  border-radius: 0.4vw; /* Updated border-radius using viewport width */
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 1vw 2vw; /* Updated padding using viewport width */
+  border-radius: 0.4vw; /* Updated border-radius using viewport width */
+  cursor: pointer;
+}

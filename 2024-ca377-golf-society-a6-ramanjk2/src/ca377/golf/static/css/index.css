@@ -1,0 +1,103 @@
+/* index.css */
+
+body {
+  border: 50px solid #314631;
+  padding: 5%;
+  background-color: #f1f1f1;
+  color: #007bff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box {
+  border: 10px solid #333;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+
+h3 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0c2a49;
+}
+
+.record-count {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav li a:hover {
+  background-color: #bbbbbb;
+}
+
+/* Custom styles for the image */
+img {
+  max-width: 60%;
+  height: 50%;
+  margin-top: 20px;
+}

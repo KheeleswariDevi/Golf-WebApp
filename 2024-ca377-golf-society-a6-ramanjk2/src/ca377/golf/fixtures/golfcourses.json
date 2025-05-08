@@ -1,0 +1,34 @@
+[
+{
+  "model": "golf.golfcourse",
+  "pk": 1,
+  "fields": {
+    "name": "Buenos Aires",
+    "latitude": "-34.596",
+    "longitude": "-58.698"
+  }
+},
+{
+  "model": "golf.golfcourse",
+  "pk": 2,
+  "fields": {
+    "name": "Castletroy",
+    "latitude": "52.661"
+  }
+},
+{
+  "model": "golf.golfcourse",
+  "pk": 3,
+  "fields": {
+    "name": "The Island",
+    "longitude": "-6.136"
+  }
+},
+{
+  "model": "golf.golfcourse",
+  "pk": 4,
+  "fields": {
+    "name": "Corballis"
+  }
+}
+]

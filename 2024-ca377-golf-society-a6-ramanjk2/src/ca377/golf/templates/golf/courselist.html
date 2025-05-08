@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golf courses</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/courselist.css' %}">
+</head>
+<body>
+    <div class="green-border">
+        <h2>Golf courses</h2>
+
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <ul>
+            {% for c in courses %}
+            <li>{{ c }} <a href="{% url 'coursedetails' c.id %}">[View details]</a></li>
+            {% empty %}
+            <li>No courses yet.</li>
+            {% endfor %}
+            <li><a href="{% url 'addgolfcourse' %}" class="add-golfcourse-button">Add golf course</a></li>
+        </ul>
+
+        <iframe width="595" height="375" src="https://www.youtube.com/embed/643GKVW8CN4?si=o0ZV6uKIa5IRTxUm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <div class="container">
+            <a href="{% url 'index' %}" class="index-button">Home</a>
+          </div>
+        </div>
+    
+    </div>
+</body>
+</html>

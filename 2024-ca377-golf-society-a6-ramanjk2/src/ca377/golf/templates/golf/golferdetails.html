@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golfer details</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/golferdetails.css' %}">
+</head>
+<body>
+    <div class="green-border">
+    <h2>Golfer details</h2>
+
+    <ul>
+        <li>Surname: {{ golfer.surname }}</li>
+        <li>Forename: {{ golfer.forename }}</li>
+        <li>Handicap: {{ golfer.handicap }}</li>
+    </ul>
+
+    <img src="/static/images /golfer.jpg" alt="Golfing Image" height="250px" width="250px">
+
+    <div class="container">
+        <a href="{% url 'index' %}" class="index-button">Home</a>
+    </div>
+    
+    </div>  
+</body>
+</html>
